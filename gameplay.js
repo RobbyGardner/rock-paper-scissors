@@ -9,6 +9,12 @@ function computerPlay() {
   console.log(computerPick);
 }
 
+const playerPrompt = prompt("Type rock, paper, or scissors");
+
+function playerSelection() {
+  if (playerPrompt != null) playerSelection = playerPrompt;
+}
+
 function playRound(playerSelection, computerSelection) {
   let playerScore = 0;
   let computerScore = 0;
@@ -55,4 +61,9 @@ function game() {
   for (let i = 0; i < 5; i++) {
     playRound();
   }
+  if (playerScore > computerScore) {
+    console.log("You are the winner!");
+  } else if (playerScore === computerScore) {
+    console.log("It's a tie!");
+  } else console.log("Computer is the winner!");
 }
