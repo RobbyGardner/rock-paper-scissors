@@ -10,17 +10,45 @@ function computerPlay() {
 }
 
 function playRound(playerSelection, computerSelection) {
+  let playerScore = 0;
+  let computerScore = 0;
   if (playerSelection === "paper" && computerSelection === "rock") {
-    return "You win! Paper beats rock";
+    console.log("You win! Paper beats rock");
+    playerScore++;
+    console.log(playerScore, computerScore);
   } else if (playerSelection === "paper" && computerSelection === "scissors") {
-    return "You lose! Scissors beats paper";
+    console.log("You lose! Scissors beats paper");
+    computerScore++;
+    console.log(playerScore, computerScore);
+  } else if (playerSelection === "paper" && computerSelection === "paper") {
+    console.log("Tie! Go again");
+    console.log(playerScore, computerScore);
   } else if (playerSelection === "scissors" && computerSelection === "paper") {
-    return "You win! Scissors beats paper";
+    console.log("You win! Scissors beats paper");
+    playerScore++;
+    console.log(playerScore, computerScore);
   } else if (playerSelection === "scissors" && computerSelection === "rock") {
-    return "You lose! Rock beats scissors";
+    console.log("You lose! Rock beats scissors");
+    computerScore++;
+    console.log(playerScore, computerScore);
+  } else if (
+    playerSelection === "scissors" &&
+    computerSelection === "scissors"
+  ) {
+    console.log("Tie! Go again");
+    console.log(playerScore, computerScore);
   } else if (playerSelection === "rock" && computerSelection === "scissors") {
-    return "You win! Rock beats scissors";
-  } else return "You lose! Paper beats rock";
+    console.log("You win! Rock beats scissors");
+    playerScore++;
+    console.log(playerScore, computerScore);
+  } else if (playerSelection === "rock" && computerSelection === "paper") {
+    console.log("You lose! Paper beats rock");
+    computerScore++;
+    console.log(playerScore, computerScore);
+  } else if (playerSelection === "rock" && computerSelection === "rock") {
+    console.log("Tie! Go again");
+    console.log(playerScore, computerScore);
+  }
 }
 
 function game() {
