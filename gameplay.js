@@ -9,7 +9,7 @@ function computerPlay() {
   console.log(computerPick);
 }
 
-function playGame(playerSelection, computerSelection) {
+function playRound(playerSelection, computerSelection) {
   if (playerSelection === "paper" && computerSelection === "rock") {
     return "You win! Paper beats rock";
   } else if (playerSelection === "paper" && computerSelection === "scissors") {
