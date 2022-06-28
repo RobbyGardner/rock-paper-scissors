@@ -20,7 +20,5 @@ function playRound(playerSelection, computerSelection) {
     return "You lose! Rock beats scissors";
   } else if (playerSelection === "rock" && computerSelection === "scissors") {
     return "You win! Rock beats scissors";
-  } else (playerSelection === "rock" && computerSelection === "paper") {
-    return "You lose! Paper beats rock";
-  }
+  } else return "You lose! Paper beats rock";
 }
