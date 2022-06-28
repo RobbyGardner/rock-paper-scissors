@@ -12,7 +12,7 @@ function computerPlay() {
 const playerPrompt = prompt("Type rock, paper, or scissors");
 
 function playerSelection() {
-  if (playerPrompt != null) playerSelection = playerPrompt;
+  if (playerPrompt != null) playerSelection = playerPrompt.toLowerCase();
 }
 
 function playRound(playerSelection, computerSelection) {
