@@ -22,3 +22,9 @@ function playRound(playerSelection, computerSelection) {
     return "You win! Rock beats scissors";
   } else return "You lose! Paper beats rock";
 }
+
+function game() {
+  for (let i = 0; i < 5; i++) {
+    playRound();
+  }
+}
